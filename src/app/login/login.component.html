@@ -1,0 +1,25 @@
+<div class="errMsg">
+    {{errMsg}}
+</div>
+
+<form  (submit)="loginCheck()">
+    <table>
+        <tr>
+            <td></td>
+            <td><h1>Login Here</h1></td>
+        </tr>
+        <tr>
+            <td>Enter Email : </td>
+            <td><input type="email" [(ngModel)]="login.email" name="email"/></td>
+        </tr>
+        <tr>
+            <td>Enter Pwd : </td>
+            <td><input type="password" [(ngModel)]="login.pwd" name="pwd"/></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><input type="submit" value="Login" class="btn btn-primary"/></td>
+        </tr>
+    </table>
+   
+</form> <a routerLink="register">Register Here</a>

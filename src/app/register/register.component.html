@@ -1,0 +1,45 @@
+<div class="succMsg">
+    {{regResp?.successMsg}}
+</div>
+
+<div class="errMsg">
+    {{regResp?.errorMsg}}
+</div>
+
+
+<form (submit)="registration()">
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><h1>Create Account Here</h1></td>
+        </tr>
+        <tr>
+            <td>Enter Name : </td>
+            <td><input type="text"  [(ngModel)]="register.name" name="name"/></td>
+        </tr>
+        <tr>
+            <td>Enter Email : </td>
+            <td><input type="email"  [(ngModel)]="register.email" name="email"/></td>
+        </tr>
+        <tr>
+            <td>Enter Pwd : </td>
+            <td><input type="pwd"  [(ngModel)]="register.pwd" name="pwd"/></td>
+        </tr>
+        <tr>
+            <td>Enter Phno : </td>
+            <td><input type="number" [(ngModel)]="register.phno" name="phno"/></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><input type="submit" value="Register" class="btn btn-primary" /></td>
+        </tr>
+    </table>
+    
+</form>
+    <div>
+        Do you account ? <a routerLink="/">Login Here</a>
+    </div>
